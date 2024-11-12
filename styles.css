@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+     font-family: Arial, Helvetica, sans-serif; /* Muda a fonte do texto */
+     line-height: 1.6; /* Muda o tamanho da linha, nesse caso, o espaçamento entre as linhas */
+     background-color: #f9f9f9; /* Cor de fundo */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3333338c;
+    padding: 20px 0; /* Preenchimento do texto, por exemplo, uma cor. Nesse caso, estamos mudando a cor da barra de navegação */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Flex? */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home {
+    /* background-color: #4A90E2; */
+    background-image:url(https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4088138/cover_image/retina_1708x683/cover-mobile-ux-design-best-practices-07b43207b46a9eac30bc54299d403fb4.png);
+    background-size: cover;
+    background-size: no-repeat;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(17, 17, 17)
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #111111;
+}
+
+#services {
+    background-color: #3549a0; /* Cor de Fundo */
+}
+
+#about {
+    background-color: #283880; /* Cor de Fundo */
+}
+
+#contact {
+    background-color: #233170; /* Cor de Fundo */
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: #89ff29;
+    color: rgb(0,0,0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 1s ease, transform 1s ease;
+}
+
